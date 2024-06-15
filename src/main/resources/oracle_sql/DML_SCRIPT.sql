@@ -1,0 +1,10 @@
+-- 유저생성 
+create user study_user identified by 1111;
+
+GRANT ALL PRIVILEGES TO study_user;
+
+COMMIT;
+
+-- 계약테이블 생성
+INSERT INTO STUDY_USER.GEYAK (POLICY_NO, GG_NAME, PGG_NAME, BH_START_DATE, BH_END_DATE, BHR, NAP_PK, MOJIP_SUL, SUGUM_SUL, UPDATE_DATE, UPDATE_USER, SPCD, SPNAME, CREATE_DATE, CREATE_USER) VALUES (1, '홍길동', '홍길동', TO_DATE('2022-06-15 18:33:54', 'YYYY-MM-DD HH24:MI:SS'), TO_DATE('2029-06-15 18:34:04', 'YYYY-MM-DD HH24:MI:SS'), 52800, null, null, null, null, null, null, '무배당 치과보험', TO_DATE('2024-06-15 18:34:49', 'YYYY-MM-DD HH24:MI:SS'), 'system');
+commit;

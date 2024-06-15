@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- http://mybatis.org/dtd/mybatis-3-mapper.dtd" 빨간줄이 생기면 F2 키를 누르고 Force Download한다 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.insurance.mapper.GeyakMapper">
+	<select id="getListGeyak"
+		resultType="com.project.insurance.model.Geyak">
+		SELECT POLICY_NO,
+			GG_NAME,
+			PGG_NAME,
+			BH_START_DATE,
+			BH_END_DATE,
+			BHR,
+			NAP_PK,
+			MOJIP_SUL,
+			SUGUM_SUL,
+			UPDATE_DATE,
+			UPDATE_USER,
+			SPCD,
+			SPNAME,
+			CREATE_DATE,
+			CREATE_USER
+		FROM GEYAK
+	</select>
+</mapper>
